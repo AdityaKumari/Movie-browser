@@ -1,4 +1,4 @@
-# JSON Comparison App
+# Movie Browser
 
 This web App to show the list of all movies.
 
