@@ -59,9 +59,15 @@ className={` md:w-[200px] w-full h-[300px] p-[1px] rounded-xl bg-gradient-to-b f
       }`}
       style={{ backgroundColor: 'rgba(0, 0, 0, 0.7)' }}
     >
-   <div className='text-white underline underline-offset-2 line-clamp-2 font-semibold text-lg'   onClick={() => setShowPopUp(true)}>
+  <div className='flex flex-col'>
+  <div className='text-white underline underline-offset-2 line-clamp-2 font-semibold text-lg'   onClick={() => setShowPopUp(true)}>
    {movie?.title}
     </div>
+    <div className='text-white  text-lg'   onClick={() => setShowPopUp(true)}>
+   {movie?.release_date.split('-')[0]}
+    </div>
+    </div>
+
   <div onClick={handleFavrouties}>
   <svg
         xmlns="http://www.w3.org/2000/svg"
